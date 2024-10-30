@@ -1,0 +1,114 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "MiyatakeJapan"
+    },
+    "motivations": {
+      "@value": "I joined the Cardano Foundation in 2016 and founded the Japan community. I had also been a member of Emurgo and IOG and have been part of Cardano's growth.\nThis is where it gets really important for Cardano. I believe there is more I can do and I will be involved as a DRep.\n\n私は2016年にCardano財団に入り、日本コミュニティを創立しました。そして、日本各地を回るサポートツアーやミートアップを計4回実施して多くのコミュニティメンバー達と交流してきました。EmurgoやIOGにも所属し、Cardanoの成長共に歩んできました。\nここからがカルダノにとって本当に重要なところです。私にできることはまだまだあると信じて、DRepとして関わっていきたいと思います。"
+    },
+    "objectives": {
+      "@value": "I believe that Cardano will be the best blockchain in the world.\nFor this to happen, the Cardano community must become the best community in the world.\nI want to work for a better community, so that more and more people will participate with faith and hope in the future of Cardano.\n\n私はCardanoは世界一のブロックチェーンになると信じています。\nそのためにはCardanoコミュニティが世界一のコミュニティになる必要があります。\n私は、Cardanoの未来を信じかつ希望をもって参加する人が増えるように、よりよいコミュニティを目指して活動したいと考えています。"
+    },
+    "paymentAddress": {
+      "@value": "addr1q8lu5e5cm574zmp9tm5u9fvjt65r9gzh4mas9padqsr40xk4p3k3a266e4awm6kak3t0a782myggxt4y0547lkwkwshsm3f05y"
+    },
+    "qualifications": {
+      "@value": "Founder of the Cardano Japanese Community\nCardno Foundation -> Emurgo -> Cardano ambassador -> IOG -> freelance\n\nCardano日本コミュニティ創立者\nカルダノ財団->Emurgo->カルダノアンバサダー->IOG->フリーランス\n"
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "Facebook"
+        },
+        "uri": {
+          "@value": "https://www.facebook.com/MiyatakeCardano/"
+        }
+      },
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "Linkedin"
+        },
+        "uri": {
+          "@value": "https://www.linkedin.com/in/toshiaki-miyatake/"
+        }
+      },
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "Cardano Forum"
+        },
+        "uri": {
+          "@value": "https://forum.cardano.org/u/toshi_miyatake_japan/activity"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "Twitter/X"
+        },
+        "uri": {
+          "@value": "https://x.com/CardanoMiyatake"
+        }
+      }
+    ]
+  }
+}
